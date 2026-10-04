@@ -1,6 +1,5 @@
 import { Sprout, CheckCircle2, ArrowUpRight, Heart, ShieldCheck, Sparkles, } from "lucide-react";
 import { Breadcrumb, Container } from "@/components";
-import { teamsCards } from "@/data/teams";
 import { getTeams } from "@/lib/api";
 import { stripHtml } from "@/lib";
 import Image from "next/image";

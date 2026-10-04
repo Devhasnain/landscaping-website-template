@@ -1,5 +1,6 @@
 import { Breadcrumb, Container } from "@/components";
 import { getLegalPageBySlug } from "@/lib/api";
+import { stripHtml } from "@/lib";
 import { Metadata } from "next";
 import moment from "moment";
 
@@ -14,7 +15,7 @@ export async function generateMetadata() {
   }
   return {
     title: page.title,
-    description: page.excerpt,
+    description: stripHtml(page.excerpt),
   };
 }
 
