@@ -1,4 +1,5 @@
 import { socialLinks } from "@/data/sociallinks";
+import { siteConfig } from "@/data/site-config";
 import { Container, Logo } from "@/components";
 import { getServiceSlugs } from "@/lib/api";
 import Link from "next/link";
@@ -15,7 +16,7 @@ export async function Footer() {
               <Logo className="tracking-tight text-green" />
               <div className="h-6 w-px bg-green-lite/30" />
               <p className="text-xs sm:text-sm text-[#73786c] max-w-xs leading-snug">
-                Stay up to date with our latest project and gardening tips.
+                We craft vibrant, sustainable landscapes for homes and businesses. From design to construction and care, we turn your outdoor space into a place you love.
               </p>
             </div>
 
@@ -74,7 +75,7 @@ export async function Footer() {
               <ul className="space-y-2.5 text-[#62685c] font-medium uppercase text-[11px] sm:text-xs">
                 {services?.map((s, i) => (
                   <li key={i}>
-                    <Link href={`/services/${s?.slug}` || "#"} className="hover:text-black">
+                    <Link href={`/services/${s?.slug}` || "#"} className="hover:text-black line-clamp-1">
                       {s?.title || ""}
                     </Link>
                   </li>
@@ -86,7 +87,7 @@ export async function Footer() {
 
         {/* Divider Line */}
         <div className="border-t border-[#d8d6c7] pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] sm:text-xs text-[#82887a] font-medium tracking-wider">
-          <div>COURTESY 2026. ALL RIGHTS RESERVED. &copy;</div>
+          <div>{siteConfig.name} 2026. ALL RIGHTS RESERVED. &copy;</div>
           <div className="flex items-center space-x-2 uppercase">
             <Link href="/privacy-policy" className="hover:text-black">
               Privacy Policy

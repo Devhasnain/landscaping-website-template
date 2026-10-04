@@ -60,12 +60,11 @@ export function ReviewsSection() {
         <div className="flex flex-col md:flex-row md:items-start justify-between mb-12 gap-4">
           <div>
             <h2 className="text-3xl md:text-5xl font-bold tracking-tight uppercase leading-tight text-[#1a2218]">
-              WHAT OUR <span className="text-gray">CLIENTS SAY</span>
+              WHAT OUR <span className="text-gray-600">CLIENTS SAY</span>
             </h2>
           </div>
           <p className="text-sm text-[#6b7265] max-w-sm pt-2">
-            Read authentic feedback from homeowners and clients who trusted us
-            with their landscape transformation.
+            Our clients' happiness is the best measure of our work. Read what they have to say about their experience with our team and their new outdoor spaces.
           </p>
         </div>
 

@@ -9,9 +9,10 @@ export function ServicesSection({ services }: { services: Service[] }) {
   return (
     <section className="py-16 md:py-24">
       <Container className="space-y-10">
-        <div className="flex flex-row items-center justify-between">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-green">
-            Our Services
+        <div className="flex flex-col sm:flex-row items-center justify-between">
+          <h2 className="text-3xl uppercase sm:text-4xl lg:text-5xl font-bold text-green">
+            OUR LANDSCAPING <br />
+          <span className="text-gray-600">SERVICES</span>
           </h2>
           <Link href={"/services"} className="font-medium underline text-green">
             See all Services

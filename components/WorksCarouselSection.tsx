@@ -22,9 +22,7 @@ export function WorksCarouselSection({projects}:{projects:Project[]}) {
         {/* Header Section */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight uppercase leading-tight max-w-3xl">
-            Get to <span className="text-gray">Know</span> Our{" "}
-            <br className="hidden md:block" />
-            Latest Garden <span className="text-gray">Works</span>
+            OUR LATEST <br /> <span className="text-gray-300">LANDSCAPE PROJECTS</span>
           </h2>
           <Link href={"/"} className="font-medium underline">
             See all

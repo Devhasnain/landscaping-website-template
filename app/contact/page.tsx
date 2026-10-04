@@ -5,6 +5,7 @@ import * as Yup from "yup";
 import { Mail, Phone, MapPin, Clock, Send } from "lucide-react";
 import { Breadcrumb, Container } from "@/components";
 import { useState } from "react";
+import Head from "next/head";
 
 interface ContactFormValues {
   name: string;
@@ -72,6 +73,11 @@ export default function ContactPage() {
   });
 
   return (
+    <>
+    <Head>
+      <title>Contact Us | Get a Free Landscape Design Quote</title>
+      <meta name="description" content="Ready to transform your outdoor space? Get in touch with LeafLife for a free, no-obligation quote on garden design, construction, and maintenance services." />
+    </Head>
     <main className="min-h-screen bg-white">
       <section className=" relative min-h-[50vh] bg-green-lite flex flex-col justify-end pb-10 pt-24">
         <Container className="text-white">
@@ -89,12 +95,10 @@ export default function ContactPage() {
           />
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight uppercase leading-tight text-white">
             LET'S BUILD YOUR <br />
-            <span className="text-gray">DREAM GARDEN</span> TOGETHER
+            <span className="text-gray-300">DREAM GARDEN</span> TOGETHER
           </h1>
           <p className="text-sm md:text-base text-white max-w-xl leading-relaxed">
-            Have a question about our landscaping services or want to discuss a
-            custom project? Reach out to us using the form below or contact us
-            directly.
+            Tell us about your outdoor space and your ideas. We will arrange a free consultation and provide a clear estimate with no obligation.
           </p>
         </Container>
       </section>
@@ -352,5 +356,7 @@ export default function ContactPage() {
         </div>
       </Container>
     </main>
+    </>
+
   );
 }

@@ -2,6 +2,7 @@ import { Sprout, CheckCircle2, ArrowUpRight, Heart, ShieldCheck, Sparkles, } fro
 import { Breadcrumb, Container } from "@/components";
 import { getTeams } from "@/lib/api";
 import { stripHtml } from "@/lib";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,34 +14,37 @@ const stats = [
   { label: "Satisfied Clients", value: "280+" },
   { label: "Expert Team Members", value: "25+" },
 ];
-
-// Core Values
 const values = [
   {
     icon: Sprout,
-    title: "Eco-Friendly Practices",
+    title: "Sustainable by Nature",
     description:
-      "We prioritize sustainable landscaping methods and native plant selection to conserve water and protect local ecosystems.",
+      "We use water-wise methods and native plants that protect local ecosystems and keep your garden healthy for years.",
   },
   {
     icon: Heart,
-    title: "Client-Centric Craftsmanship",
+    title: "Designed Around You",
     description:
-      "Every design is tailored around your personal lifestyle, aesthetic vision, and functional garden requirements.",
+      "Every garden is shaped by your lifestyle, your taste, and the way you want to use your outdoor space.",
   },
   {
     icon: ShieldCheck,
-    title: "Uncompromised Quality",
+    title: "Quality That Lasts",
     description:
-      "From premium soil preparation to hardscaping construction, we never cut corners on quality and longevity.",
+      "From soil preparation to hardscape construction, we use trusted materials and never cut corners on durability.",
   },
   {
     icon: Sparkles,
-    title: "Innovative Design",
+    title: "Creative Design",
     description:
-      "We combine timeless nature with modern architectural design trends to build gardens that truly stand out.",
+      "We blend natural beauty with modern design ideas to create gardens that look original and stand out.",
   },
 ];
+
+export const metadata:Metadata = {
+  title:"About LeafLife | Sustainable Landscape Design Experts",
+  description:"Learn about LeafLife, a team of landscape architects and gardeners with 10+ years of experience creating sustainable, beautiful outdoor spaces for every client." 
+}
 
 export const AboutPage = async () => {
   const teams = await getTeams();
@@ -65,15 +69,15 @@ export const AboutPage = async () => {
                 ]}
               />
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight uppercase leading-tight">
-                WE CRAFT LIVING <br />
-                <span className="text-gray">LANDSCAPES THAT</span> INSPIRE
+                WE GROW GREEN <br />{" "}
+                <span className="text-gray-300">SPACES THAT </span> <br /> TRULY
+                LAST
               </h1>
               <p className="text-sm md:text-base  leading-relaxed max-w-xl">
-                Founded with a passion for nature and design, LeafLife
-                transforms outdoor spaces into sustainable, aesthetically
-                pleasing sanctuaries. Our dedicated team of architects and
-                horticulturists brings years of expertise to every garden we
-                cultivate.
+                For over a decade, LeafLife has turned ordinary yards into
+                thriving, sustainable landscapes. Our architects and gardeners
+                combine creativity, science, and care to build outdoor spaces
+                that look beautiful and stay healthy for years.
               </p>
 
               <div className="pt-2 flex flex-wrap items-center gap-4 mt-5">
@@ -105,7 +109,7 @@ export const AboutPage = async () => {
                 />
               </div>
               {/* Floating Experience Badge */}
-              <div className="absolute -bottom-6 -left-6 bg-[#2b3524] text-white p-6 rounded-2xl shadow-lg hidden sm:block max-w-[200px]">
+              <div className="absolute -bottom-6 -left-6 bg-[#2b3524] text-white p-6 rounded-2xl shadow-lg hidden sm:block max-w-50">
                 <p className="text-3xl font-bold">12+</p>
                 <p className="text-xs uppercase tracking-wider text-gray-300 mt-1 font-medium">
                   Years of Green Excellence
@@ -153,33 +157,32 @@ export const AboutPage = async () => {
 
             <div className="lg:col-span-7 space-y-6 order-1 lg:order-2">
               <h2 className="text-3xl sm:text-4xl font-bold tracking-tight uppercase text-[#1a2218]">
-                Passionate About Bringing <br />
-                <span className="text-gray">Nature Back To Life</span>
+                WHERE PASSION MEETS <br />
+                <span className="text-gray-600">NATURE AND DESIGN</span>
               </h2>
               <p className="text-sm md:text-base text-[#6b7265] leading-relaxed">
-                What started over a decade ago as a small nursery project has
-                grown into a full-service landscape architecture and garden
-                design firm. We believe every space—whether a residential
-                backyard or a public garden—has the potential to foster calm,
-                connection, and biological richness.
+                LeafLife began as a small nursery with a big love for plants.
+                Today, we are a full-service landscape design and construction
+                firm. We believe every space, from a family backyard to a public
+                park, can bring calm, connection, and life.
               </p>
 
               <ul className="space-y-3 text-sm text-[#2b3524] font-medium pt-2">
                 <li className="flex items-center gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#2b3524] shrink-0" />
                   <span>
-                    Customized designs matching client lifestyle & architecture
+                    Custom designs that match your lifestyle and home
                   </span>
                 </li>
                 <li className="flex items-center gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#2b3524] shrink-0" />
                   <span>
-                    Expert plant selection tailored to local climate & soil
+                    Plants chosen to suit your local climate and soil
                   </span>
                 </li>
                 <li className="flex items-center gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#2b3524] shrink-0" />
-                  <span>End-to-end execution from concept to maintenance</span>
+                  <span>Complete service from first sketch to ongoing care</span>
                 </li>
               </ul>
             </div>
@@ -191,7 +194,7 @@ export const AboutPage = async () => {
       <section id="values" className="mb-20">
         <Container>
           <h2 className="mb-12 text-3xl sm:text-4xl font-bold tracking-tight uppercase text-[#1a2218]">
-            WHAT GUIDES <span className="text-gray">OUR WORK</span>
+            VALUES THAT <span className="text-gray-600">SHAPE EVERY GARDEN</span>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -224,19 +227,21 @@ export const AboutPage = async () => {
       <section className="mb-20">
         <Container>
           <h2 className="mb-12 text-3xl sm:text-4xl font-bold tracking-tight uppercase text-[#1a2218]">
-            MEET OUR <span className="text-gray">LANDSCAPE EXPERTS</span>
+            MEET OUR <span className="text-gray-600">LANDSCAPE EXPERTS</span>
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {teams.map((member, idx) => (
               <div key={idx} className="group flex flex-col">
                 <div className="relative h-80 sm:h-96 w-full rounded-3xl overflow-hidden bg-[#dcd8c4] mb-4">
-                 {member?.featuredImage?.node?.sourceUrl && <Image
-                    src={member?.featuredImage?.node?.sourceUrl}
-                    alt={member?.featuredImage?.node?.altText}
-                    fill
-                    className=" object-cover group-hover:scale-105 transition-transform duration-500"
-                  />}
+                  {member?.featuredImage?.node?.sourceUrl && (
+                    <Image
+                      src={member?.featuredImage?.node?.sourceUrl}
+                      alt={member?.featuredImage?.node?.altText}
+                      fill
+                      className=" object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  )}
                 </div>
                 <h4 className="font-bold text-lg uppercase tracking-wide text-[#1a2218]">
                   {member?.title}
@@ -276,4 +281,4 @@ export const AboutPage = async () => {
   );
 };
 
-export default AboutPage
+export default AboutPage;

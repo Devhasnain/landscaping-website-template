@@ -81,15 +81,10 @@ export function EstimateFormSection() {
           <div className="lg:col-span-5 space-y-6">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight uppercase leading-tight text-[#1a2218]">
               Request a Free <br />
-              <span className="text-gray">Project</span> Estimate
+              <span className="text-gray-600">Project</span> Estimate
             </h2>
             <p className="text-sm md:text-base text-[#6b7265] leading-relaxed">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti
-              voluptatibus, qui eum iure impedit assumenda. Ducimus sunt neque
-              quia iusto, fuga voluptatum dolorem dolor laborum error placeat
-              provident aliquam? Vel obcaecati nam voluptatibus beatae nisi
-              officia facilis placeat, possimus voluptates quo quasi voluptas
-              maiores, dolores ab. Quibusdam maxime modi neque?
+              Ready to transform your outdoor space? Tell us about your project and our team will visit your site, discuss your ideas, and provide a clear, detailed estimate. There is no cost and no obligation, just honest advice from experienced landscape professionals.
             </p>
           </div>
 

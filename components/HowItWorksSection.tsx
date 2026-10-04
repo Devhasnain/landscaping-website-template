@@ -10,27 +10,27 @@ interface StepItem {
 const steps: StepItem[] = [
   {
     number: "01",
-    title: "Design consultation",
+    title: "Design Consultation",
     description:
-      "In the initial step, we sit down with you to have a detailed discussion about your garden vision and preferences.",
+      "We meet with you to discuss your vision, budget, and style, and visit your site to understand the space.",
   },
   {
     number: "02",
     title: "Design & Planning",
     description:
-      "Our team of experts meticulously crafts a custom garden design that aligns with your desires and your space characteristics.",
+      "Our designers create a custom plan with layouts, plant selections, and materials that match your taste and your space.",
   },
   {
     number: "03",
-    title: "Implement construction",
+    title: "Review & Approval",
     description:
-      "We present the design to you for review. Once approved, we move forward to implement the plan with construction.",
+      "We present the full design for your feedback. We refine it until you love it, then finalize the plan.",
   },
   {
     number: "04",
-    title: "Implement Construction",
+    title: "Construction & Care",
     description:
-      "We present the design to you for review. Once approved, we move forward to implement the plan with construction.",
+      "Our skilled team builds your garden with care, then hands it over along with simple maintenance tips.",
   },
 ];
 
@@ -39,8 +39,8 @@ export function HowItWorksSection() {
     <section className="bg-green-lite text-white py-16 md:py-24">
       <Container className="space-y-10">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight uppercase leading-tight max-w-2xl">
-          Simple Steps For <br className="hidden md:block" />
-          <span className="text-gray-300 font-normal">Our Landscape Work</span>
+          SIMPLE STEPS FOR <br className="hidden md:block" />
+          <span className="text-gray-300">YOUR DREAM GARDEN</span>
         </h2>
 
         {/* Steps Grid */}

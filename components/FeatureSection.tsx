@@ -14,27 +14,27 @@ interface FeatureItem {
 const features: FeatureItem[] = [
   {
     icon: Heart,
-    title: "Passion in every work",
+    title: "Passion in Every Project",
     description:
-      "We are deeply passionate about creating beautiful, sustainable green landscapes for our clients.",
+      "We pour our heart into every landscape, creating beautiful, lasting green spaces that our clients are proud to call their own.",
   },
   {
     icon: Link,
-    title: "Collaboration on top",
+    title: "Teamwork at the Core",
     description:
-      "We make your dream design come true by combining your ideas with our 10+ years of garden design expertise.",
+      "We blend your ideas with our 10+ years of design expertise, so the final result truly reflects your vision.",
   },
   {
     icon: CheckCircle,
-    title: "Sustainability in check",
+    title: "Sustainability First",
     description:
-      "We love nurturing nature, one garden at a time, so that you can enjoy the beautiful landscape of our garden even longer.",
+      "We use eco-friendly materials and water-smart practices, so your garden stays healthy and beautiful for years to come.",
   },
   {
     icon: Star,
-    title: "Creativity unleashed",
+    title: "Creativity That Stands Out",
     description:
-      "We make sure to not only give you our innovative designs that stand out to make sure that your garden is not like the others.",
+      "Every design is original and tailored to your space, so your garden never looks like anyone else's.",
   },
 ];
 
@@ -42,9 +42,11 @@ export function FeatureSection() {
   return (
     <section className="py-16 md:py-24">
       <Container className="space-y-10">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-green">
-          WE ARE{" "}<span className="text-gray-500">DIFFERENT</span><br />
-          IN EVERY WAYS
+        <h2 className="uppercase text-3xl sm:text-4xl lg:text-5xl font-bold text-green">
+          What Makes Us <br />
+          <span className="text-gray-600">
+          Different
+          </span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Side: Image */}

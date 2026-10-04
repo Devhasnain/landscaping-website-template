@@ -26,15 +26,13 @@ export function HeroSection() {
 
           {/* Hero Heading */}
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight uppercase leading-[1.08]">
-            CREATE YOUR <br />
-            <span className="text-[#e2e0cb] font-extrabold underline decoration-white/30 decoration-2 underline-offset-8">
-              DREAM GARDEN
-            </span>
+            TRANSFORM YOUR <br />
+            <span className="text-[#e2e0cb] font-extrabold underline decoration-white/30 decoration-2 underline-offset-8">OUTDOOR SPACE</span>
           </h1>
 
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed max-w-2xl font-light">
-            Crafting vibrant, sustainable green landscapes for over a decade. Our expert landscape architects and gardener teams bring passion, creativity, and lasting beauty to your outdoor spaces.
+            From private gardens to commercial landscapes, we design, build, and maintain green spaces that look stunning in every season. Our experienced team turns your vision into a thriving outdoor retreat.
           </p>
 
           {/* Action Buttons */}
@@ -44,7 +42,7 @@ export function HeroSection() {
               href="#estimate"
               className="inline-flex items-center gap-2 bg-[#2b3524] hover:bg-[#1a2218] text-white font-semibold uppercase tracking-wider text-xs px-7 py-4 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
             >
-              <span>Get Free Estimate</span>
+              <span>Get a Free Quote</span>
               <ArrowUpRight className="w-4 h-4" />
             </Link>
 

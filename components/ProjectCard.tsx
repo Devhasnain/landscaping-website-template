@@ -1,4 +1,5 @@
 import { ArrowUpRight, MapPin } from "lucide-react";
+import { stripHtml } from "@/lib";
 import { Project } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
@@ -41,7 +42,7 @@ export const ProjectCard = ({ project }: Props) => {
         </div>
 
         <p className="text-xs md:text-sm text-[#6b7265] leading-relaxed line-clamp-2">
-          {project.content}
+          {stripHtml(project.excerpt)}
         </p>
 
         {/* Arow icon go laetša seka sa link/action */}
