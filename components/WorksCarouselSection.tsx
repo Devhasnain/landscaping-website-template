@@ -24,7 +24,7 @@ export function WorksCarouselSection({projects}:{projects:Project[]}) {
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight uppercase leading-tight max-w-3xl">
             OUR LATEST <br /> <span className="text-gray-300">LANDSCAPE PROJECTS</span>
           </h2>
-          <Link href={"/"} className="font-medium underline">
+          <Link href={"/projects"} className="font-medium underline">
             See all
           </Link>
         </div>

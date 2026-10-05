@@ -198,7 +198,7 @@ export function EstimateFormSection() {
                     } rounded-xl px-4 py-3 text-sm text-[#1a2218] focus:outline-none focus:border-[#2b3524] transition-colors`}
                   >
                     <option value="" disabled>
-                      Pumili ng serbisyo...
+                      Select a service
                     </option>
                     <option value="garden-design">Garden Design</option>
                     <option value="plant-selection">Plant Selection</option>
