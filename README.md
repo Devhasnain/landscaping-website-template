@@ -2,7 +2,7 @@
 
 A modern, responsive landscaping website template designed for landscaping companies, lawn care businesses, gardeners, and outdoor service providers. Create a professional online presence, showcase your services, and help potential customers connect with your business.
 
-**Live Demo:** [landscaping-web-temp.vercel.app](https://landscaping-web-temp.vercel.app/)
+**Live Demo:** [landscaping-web-temp](https://hasnainalam.com/projects/landscaping-website-template)
 
 ## Preview
 
@@ -131,7 +131,7 @@ Choose and specify a license before distributing or selling this template. If yo
 
 Ready to explore the design?
 
-**[View the Live Demo →](https://landscaping-web-temp.vercel.app/)**
+**[View the Live Demo →](https://hasnainalam.com/projects/landscaping-website-template)**
 
 ---
 
