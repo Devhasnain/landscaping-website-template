@@ -87,7 +87,7 @@ export async function Footer() {
 
         {/* Divider Line */}
         <div className="border-t border-[#d8d6c7] pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] sm:text-xs text-[#82887a] font-medium tracking-wider">
-          <div>{siteConfig.name} 2026. ALL RIGHTS RESERVED. &copy;</div>
+          <div>{siteConfig.name} 2026. ALL RIGHTS RESERVED. &copy; | Developed By <Link target="_blank" href={"https://hasnainalam.com"} >Hasnain Alam</Link></div>
           <div className="flex items-center space-x-2 uppercase">
             <Link href="/privacy-policy" className="hover:text-black">
               Privacy Policy
